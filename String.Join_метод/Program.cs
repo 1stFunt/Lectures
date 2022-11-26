@@ -13,11 +13,8 @@ void FillArray(int[] coll)
 }
 void PrintArray(int[] coll)
 {
-    int index = 0;
-    while (index < coll.Length)
-    {
-        index++;
-    }
+    for (int index = 0; index < coll.Length; index++)
+        continue;
     Console.Write(number + "->[" + String.Join(", ", array) + "]");
 }
 FillArray(array);
