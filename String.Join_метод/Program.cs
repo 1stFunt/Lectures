@@ -15,7 +15,7 @@ void PrintArray(int[] coll)
 {
     for (int index = 0; index < coll.Length; index++)
         continue;
-    Console.Write(number + "->[" + String.Join(", ", array) + "]");
+    Console.Write(number + "->[" + String.Join(", ", coll /*или переменную int[] */) + "]");
 }
 FillArray(array);
 PrintArray(array);
