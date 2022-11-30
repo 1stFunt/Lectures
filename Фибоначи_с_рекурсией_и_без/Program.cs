@@ -1,6 +1,6 @@
 ﻿//Вывести первые N чисел Фибоначи.
 //Вариант без рекурсии:
-/*int count = ReadInt("Введите кол-во членов ряда Фибоначи: ");
+int count = ReadInt("Введите кол-во членов ряда Фибоначи: ");
 int firstNumber = 0;
 int secondNumber = 1;
 if (count > 0)
@@ -18,7 +18,7 @@ int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
-}*/
+}
 
 //Вариант с массивом:
 int count = ReadInt("Введите кол-во членов ряда Фибоначи: ");
@@ -31,9 +31,20 @@ for (int i = 2; i < count; i++)
 {
     fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 }
-Console.Write(String.Join("", fibonacci));
+Console.Write(String.Join(" ", fibonacci));
 int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
+}
+
+//Вариант с рекурсией!!!
+double Fibonacci(int n)
+{
+    if (n == 1 || n == 2) return 1;
+    else return Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+for (int i = 1; i < 40; i++)
+{
+    Console.Write(Fibonacci(i) + " ");
 }
