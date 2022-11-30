@@ -35,3 +35,21 @@ int ReadInt(string message)
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
+
+//Второй пример. Bool в методе.
+int lineA = ReadInt("Введите сторону A: ");
+int lineB = ReadInt("Введите сторону B: ");
+int lineC = ReadInt("Введите сторону C: ");
+
+if (CheckSide(lineA, lineB, lineC) && CheckSide(lineB, lineA, lineC) && CheckSide(lineC, lineB, lineA))
+{
+    Console.WriteLine("Yes");
+}
+else
+{
+    Console.WriteLine("No");
+}
+bool CheckSide(int checkSide, int a, int b) //метод bool
+{
+    return checkSide < a + b;
+}
