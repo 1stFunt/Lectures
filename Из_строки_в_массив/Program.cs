@@ -36,7 +36,7 @@ int[] ParseArray(string inputNumbers) //метод парсинга
 Console.WriteLine(String.Join(",", input) + " -> " + positive);
 
 //Мой вариант из домашки:
-/*Console.Write("Введите целые числа через запятую: ");
+Console.Write("Введите целые числа через запятую: ");
 string? numbers = (Console.ReadLine());
 int count = 1;
 for (int i = 0; i < numbers.Length; i++)
@@ -67,4 +67,4 @@ for (int i = 0; i < newNumbers.Length; i++)
 {
     if (newNumbers[i] > 0) positive++;
 }
-Console.WriteLine(String.Join(",", newNumbers) + " -> " + positive);*/
+Console.WriteLine(String.Join(",", newNumbers) + " -> " + positive);
