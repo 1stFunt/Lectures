@@ -31,7 +31,7 @@ void PrintImage(int[,] image) //Немного переписанный мето
     {
         for (int j = 0; j < image.GetLength(1); j++)
         {
-            //Console.Write($"{matr[i, j]} ");
+            //Console.Write($"{matr[i, j]} "); или Console.Write(array[i, j] + " ");
             if (image[i, j] == 0) Console.Write($" ");
             else Console.Write($"+");
         }
