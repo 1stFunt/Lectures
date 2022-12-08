@@ -1,6 +1,6 @@
 ﻿// Создать словарь, сколько раз встречается число в массиве.
 // Первый способ:
-/*int rows = ReadInt("Введите количество строк: ");
+int rows = ReadInt("Введите количество строк: ");
 int columns = ReadInt("Введите количество столбцов: ");
 int[,] array = new int[rows, columns];
 FillArray(array);
@@ -71,7 +71,7 @@ int CalculateCountNumbers(int[,] sortArray)
         }
     }
     return countNumbers;
-}*/
+}
 
 //Второй способ:
 int rows = ReadInt("Введите количество строк: ");
